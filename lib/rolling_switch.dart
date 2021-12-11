@@ -20,7 +20,7 @@ import 'dart:math';
 /// states or any other undesirable behavior, please
 /// don't forget to set them.
 ///
-class LiteRollingSwitch extends StatefulWidget {
+class RollingSwitch extends StatefulWidget {
   @required
   final bool value;
   @required
@@ -37,7 +37,7 @@ class LiteRollingSwitch extends StatefulWidget {
   final Function? onDoubleTap;
   final Function? onSwipe;
 
-  LiteRollingSwitch(
+  RollingSwitch(
       {this.value = false,
       this.textOff = "Off",
       this.textOn = "On",
@@ -56,7 +56,7 @@ class LiteRollingSwitch extends StatefulWidget {
   _RollingSwitchState createState() => _RollingSwitchState();
 }
 
-class _RollingSwitchState extends State<LiteRollingSwitch>
+class _RollingSwitchState extends State<RollingSwitch>
     with SingleTickerProviderStateMixin {
   late AnimationController animationController;
   late Animation<double> animation;
